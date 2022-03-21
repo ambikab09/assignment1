@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce in Tourism</title>
+    <link rel="stylesheet" href="assignment1.css">
+    <style>
+
+        .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(44, 59, 68);/* Sidebar background color */
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+        .sidebar .log{
+            background-color: cornflowerblue;
+            font-family: 'Times New Roman', Times, serif;
+            color:whitesmoke;
+
+        }
+        .sidebar .log:hover{
+            color: blue;
+        }
+        .sidebar .help{
+            /* background-color: cornflowerblue; */
+            color:whitesmoke;
+            font-weight: bold;
+        }
+        .sidebar .profileimg{
+            /* left: 10px; */
+            margin-left: 50px;
+        }
+        .sidebar .profile{
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .sidebar .help:hover{
+            background-color: blue;
+        }
+        .sidebar div {
+        padding: 8px 8px 8px 30px;
+        font-size: 24px;
+        display: block;
+        transition: 0.5s;
+        cursor: pointer;
+        }
+        
+        .sidebar .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 36px;
+        }
+        
+        .openbtn {
+        font-size: 30px;
+        cursor: pointer;
+        /* background-color:#383964; */
+        /* background-color: rgb(32, 30, 30); */
+        background-color: rgb(56, 53, 53);
+        font-family:'Times New Roman', Times, serif;
+        /* color: whitesmoke; */
+        color: white;
+        font-weight: bold;
+        }
+        .openbtn:hover{
+            color:#fc036b ;
+        }
+        
+        #main {
+        transition: margin-left .5s;
+        }
+        /* #main .openbtn{
+            top: 10px;
+            overflow: hidden;
+        } */
+        </style>
+</head>
+<body>
+    <!-- <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="title">Logout</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="title">Help</span>
+                </a>
+            </li>
+        </ul>
+    </div> -->
+
+    <!--Sidebar code starts here-->
+    <div id="mySidebar" class="sidebar">
+        <div class="closebtn" onclick="closeNav()">×</div>
+        <img src="profile.png" height="100px" width="100x" class="profileimg"><br><br>
+        <p class="profile">Hello User!!</p><br>
+        <div class="help"><img src="help-web-button.png">&nbsp; &nbsp; &nbsp;Help</div>
+        <div class="help"><a href="signup.html" class="help"><img src="signout.jpg">&nbsp; &nbsp; &nbsp;Logout</a></div>
+        <div class="help"><img src="settings.png">&nbsp; &nbsp; &nbsp;Settings</div>
+        
+        </div>
+        
+        <!-- <div id="main">
+         
+        </div> -->
+        <nav class="navbar">
+        
+            <div class="navbag">
+            <ul class="nav-links"><button class="openbtn" onclick="openNav()">View Profile</button>
+                <button class="btncolor"><li class="active"><a href="assign1.html" class="decoration">Home</a></li></button>
+                <button class="btncolor"><li class="active"><a href="#tours" class="decoration">Tours</a></li></button>
+                <button class="btncolor"><li class="active"><a href="#explor" class="decoration">Explore</a></li></button>
+                <button class="btncolor"><li class="active"><a href="#aboutus" class="decoration">About</a></li></button>
+                <button class="btncolor"><li class="active"><a href="#foot" class="decoration">Contact</a></li></button>
+                <!-- <li class="ctn"><li><a href="signup.html" class="li-item">Logout</a></li>-->  
+            </ul>
+            <img src="menu-btn.png" alt="" class="menu-btn">
+        </div>
+        </nav>
+        <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+        <!--sidebar code ends here-->
+    <!-- navbar -->
+    
+    <header>
+        <div class="header-content">
+            <h1 class="logo">ADVENTURE</h1>
+            <h2>E-Commerce in Tourism</h2>
+            <div class="line"></div>
+            <h1>Explore The Colourful World</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <!-- Events -->
+    <section id="tours" class="events">
+        <div class="title">
+            <h2>Upcoming Events</h2>
+            <div class="line"></div>
+        </div>
+            <div class="row">
+                <div class="col">
+                    <img src="img1.png" alt="">
+                    <h4>Everest Camp Trek</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, deleniti!</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="col">
+                    <img src="img2.png" alt="">
+                    <h4>Walking Holidays</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, deleniti!</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+            </div>
+        
+    </section>
+    <section id="explor" class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, repudiandae?</p>
+        <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+    <section id="aboutus" class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>OUR UPCOMING TOURS & DESTINATION</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, ad?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="img3.png" alt="">
+                    <img src="img4.png" alt="">
+                    <img src="img5.png" alt="">
+                    <img src="img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="foot" class="footer">
+        <p>123 Fifth Avenue, my 10160, New York, USA! Phone:800-123-456! Email:contact@examp</p>
+        <p>copyright 0 2020 outdoor adventure</p>
+    </section>
+    <!-- <script>
+        const menuBtn = document.querySelector('.menu-btn')
+       const navlinks = document.querySelector('.nav-links')
+       menuBtn.addEventListener('click',()=>{
+       navlinks.classList.toggle('mobile-menu')
+    })
+    </script> -->
+</body>
+</html>
